@@ -1,1 +1,1 @@
-# HIT381-ARUNI
+CDU-Waste-Management-App

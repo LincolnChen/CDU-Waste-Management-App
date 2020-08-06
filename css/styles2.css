@@ -1,0 +1,193 @@
+/* Side navigation Start - Code modifed from original (https://www.w3schools.com/howto/howto_js_sidenav.asp)*/
+.header-nav{
+  border: 1px solid #201644;
+  background-color:#201644;
+  padding-bottom: 12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu{
+  font-size: 26px;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  padding-top: 0;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.navforms{
+  margin: 15px 0px 10px 15px;
+}
+
+.forms{
+  margin: 0px 0px 10px 0px;
+  padding-left:40px;
+  background-color: #f9fafc;
+}
+
+.navforms a{
+  font-size: 1rem;
+  padding-left: 0px;
+}
+
+
+.form-h2{
+  color:#48535f;
+  font-weight:400;
+  font-size: 1.4rem;
+}
+
+.search-btn{
+  margin: auto;
+  width: 98%;
+}
+/* Side navigation End */
+
+/* Footer navigation Start */
+.footer-nav{
+  border-top: solid lightgrey 1px;
+  background-color: #201644;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  position: fixed;
+  text-align: center;
+  color: black;
+  padding: 5px 0 5px 0;
+  font-size: .85rem;
+}
+
+.footer-nav a{
+  display: inline-block;
+  color: White;
+  text-decoration: none;
+  width: 100%;
+}
+/* Footer navigation End */
+/* Ann's CSS starts*/
+
+.body{
+}
+
+/*text styles */
+.CDUTextTwo{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+.CDUTextThree{
+  color: #fff;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
+/* Box Styles */
+.BoxBody{
+  width: 100%;
+  border-spacing: 0,0;
+}
+
+.CDUMostVisited{
+  border: 1px solid #007a87;
+  background-color:#007a87;
+  width: 100%;
+  height: 50px;
+}
+
+.FacilitiesServices, .CDUGardensGalleries{
+  border: 1px solid #008593;
+  background-color:#008593;
+  width: 100%;
+  height: 50px;
+}
+
+/* Button Styles */
+.ButtonBox{
+  padding-bottom: 10px;
+  padding-left: 19px;
+}
+
+.ButtonLine{
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+.ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery {
+  border: 1px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #201644;
+  background-color: #A8C5C8;
+  cursor: pointer;
+}
+
+/* Media Queires for buttons*/
+
+@media screen and (max-width: 1024px){
+  .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .MalNairn, .CDUGallery, .ChineseGarden {
+    width: 30%;
+    font-size: 14px;
+    height: 40px;
+  }
+  .StudentCentral, .LunchRoom, .Childcare{
+    width: 30%;
+    font-size: 13px;
+    height: 40px;
+  }
+    .UniversityTheatre, .NanGiese, .IndonesianGarden {
+    width: 30%;
+    font-size: 11.5px;
+    height: 40px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .StudentCentral, .Security, .LibraryLocation, .UniPrint, .CDUBookshop, .ITKiosk, .Childcare, .PostOffice, .Menzies, .CYCM, .UglyDuck, .ArtHouse, .LunchRoom,
+  .ChineseGarden, .IndonesianGarden, .MalNairn, .UniversityTheatre, .NanGiese, .CDUGallery  {
+    width: 32%;
+    height: 60px;
+    font-size: 25px;
+  }
+}

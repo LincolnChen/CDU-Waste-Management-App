@@ -3,7 +3,8 @@
 .header-nav{
   border: 1px solid #007a87;
   background-color:#007a87;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -22,12 +23,33 @@
   padding: 1px 0 0 10px;
 }
 
-
-
-.menu{
-  font-size: 26px;
-  color: white;
+.overview{
+  padding-top: 10px;
 }
+
+.callaction{
+  background-color: #EEEEEE;
+}
+
+.icon-nav{
+  background-color: #f5f5fc;
+}
+
+.cardContainer:after {
+      display: table;
+      clear: both;
+   }
+.card{
+  color: white;
+  width: calc(25% - 20px);
+  padding: 10px;
+  border-radius: 10px;
+  height: 100px;
+  margin: 20px auto; /* Added */
+  float: none; /* Added */
+  margin-bottom: 10px; /* Added */
+}
+
 
 .sidenav {
   height: 100%;
@@ -63,9 +85,24 @@
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+
+
+@media screen and (max-width: 480px) {
+  .cardContainer{
+    margin-left: 25px;
+    margin-right: 25px;
+
+  }
+  .card {
+    width: 100%;
+    height: 25%;
+  }
+  .card h2{
+    text-align: center;
+  }
+  .card p{
+    text-align: center;
+  }
 }
 
 .navforms{
@@ -147,7 +184,7 @@
 
 .footer-nav a{
   display: inline-block;
-  color: White;
+  color: #f5feff;
   text-decoration: none;
   width: 100%;
 }

@@ -5,50 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <meta name="Description" content="CDU">
     <title>CDU Waste Management App</title>
   </head>
   <body>
     <header class="header-nav">
-      <span onclick="openNav()">&#9776;</span>
-      <h2>CDU Waste Management</h2>
-      <div class="break" style="flex-basis: 100%;height:0;"></div>
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h2 class="form-h2 navforms">Settings</h2>
-        <hr style="margin-bottom:0;"/>
-        <div class="navforms forms">
-          <p><a href="changecampus.html">Change Campus</p></a>
-          <p><a href="help.html">Help</a></p>
+      <h2>CDU Waste Management<span>&#9842;</span></h2>
+    </header>
+    <section class="callaction">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-lg-12">
+  				<div class="overview">
+            <h5>Weclome! CDU students and staff</h5>
+  					<p>This app is designed to help CDU Casuarina Campus to better manage waste. In order to do so,
+            we need you to participate in better waste management practices. </p>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	</section>
+    <section id="wastesorting">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="cardContainer">
+              <div class="card" style="background-color:rgb(207, 41, 91);">
+                <h2>First icon</h2>
+                <p>General Waste</p>
+              </div>
+              <div class="card" style="background-color:rgb(224, 214, 7);">
+                <h2>Second icon</h2>
+                <p>Recyclable Waste</p>
+              </div>
+              <div class="card" style="background-color:rgb(153, 29, 224);">
+                <h2>Third icon</h2>
+                <p>Some text</p>
+              </div>
+              <div class="card" style="background-color:rgb(204, 91, 39);">
+                <h2>Fourth icon</h2>
+                <p>Some text</p>
+              </div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- Page Content here (Put your page stuff here)-->
-
-    <div id="map" onclick="location"></div>
-
-    <!-- End Page content -->
-    <div class="footer-nav">
-      <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.6rem;">location_on</span><p style="margin: auto;">CDU Map</p></a>
-      <a href="CDUPrecinct.html"><span class="material-icons" style="font-size: 1.6rem;color: lightgrey;">location_city</span><p style="margin: auto;color: lightgrey;">CDU Precinct</p></a>
-      <a href="RubbishItem.html"><span class="material-icons" style="font-size: 1.6rem;color: lightgrey;">auto_delete</span><p style="margin: auto;color: lightgrey;">Rubbish Item</p></a>
     </div>
-    <script href="bootstrap.bundle.js"></script>
-    <script>
-      function openNav() {
-        document.getElementById("mySidenav").style.width = "70%";
-        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-      }
-
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-        document.body.style.backgroundColor = "white";
-      }
-    </script>
-    <script src ="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-    <script src ="js/myscript.js"></script>
-
+    </section>
+    <section class="quickicon">
+      <div class="footer-nav">
+        <a href="index.html" style="width: 85%;"><span class="material-icons" style="font-size: 1.6rem;">location_on</span><p style="margin: auto;">Nearest Bins</p></a>
+        <a href="CDUPrecinct.html"><span class="material-icons" style="font-size: 1.6rem;">find_in_page</span><p style="margin: auto;">Waste Classification</p></a>
+        <a href="RubbishItem.html"><span class="material-icons" style="font-size: 1.6rem;">auto_delete</span><p style="margin: auto;">Rubbish Item</p></a>
+      </div>
+    </section>
   </body>
 </html>
